@@ -5,6 +5,6 @@ public class BurgerTest {
     @Test
     public void testCost() {
         Burger burger = new Burger(3.0);
-        Assertions.assertEquals(3.0, burger.cost());
+        Assertions.assertEquals(3.0, burger.cost() ,"Burger cost is incorrect.");
     }
 }
