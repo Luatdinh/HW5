@@ -5,6 +5,6 @@ public class HotDogTest {
     @Test
     public void testCost() {
         HotDog hotDog = new HotDog(4.0);
-        Assertions.assertEquals(4.0, hotDog.cost());
+        Assertions.assertEquals(4.0, hotDog.cost(), "HotDog cost is incorrect.");
     }
 }
