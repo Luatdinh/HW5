@@ -9,16 +9,16 @@ public class Driver {
         FoodItem friesWithMushroomAndSauce = new Sauce(friesWithMushroom, 2.25);
         FoodItem hotDogWithPickle = new Pickle(hotDog, 2.5);
         FoodItem hotDogWithPickleandSauce = new Sauce(hotDogWithPickle, 2);
-        Order foodOder = new Order();
-        foodOder.addFoodItem(burgerWithLettuceAndTomato);
-        foodOder.addFoodItem(friesWithMushroomAndSauce);
-        foodOder.addFoodItem(hotDogWithPickleandSauce);
-        double totalPrice = foodOder.getTotalCost();
-        System.out.print("Total cost without discount: $");
+        Order foodOrder = new Order();
+        foodOrder.addFoodItem(burgerWithLettuceAndTomato);
+        foodOrder.addFoodItem(friesWithMushroomAndSauce);
+        foodOrder.addFoodItem(hotDogWithPickleandSauce);
+        double totalPrice = foodOrder.getTotalCost();
+        System.out.print("- Total cost without discount is $");
         System.out.println(totalPrice);
         CustomerLoyaltyStatus customerLoyaltyStatus= new CustomerLoyaltyStatus(0.2);
         double finalPrice = customerLoyaltyStatus.applyDiscount(totalPrice);
-        System.out.print("Total cost with discount: $");
+        System.out.print("- Total cost with discount is $");
         System.out.println(finalPrice);
     }
 }
