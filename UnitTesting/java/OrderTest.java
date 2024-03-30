@@ -9,6 +9,6 @@ public class OrderTest {
         Order order = new Order();
         order.addFoodItem(burger);
         order.addFoodItem(fries);
-        Assertions.assertEquals(5.0, order.getTotalCost());
+        Assertions.assertEquals(5.0, order.getTotalCost(), "Order cost is incorrect");
     }
 }
